@@ -3,248 +3,367 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#1B5E20">
-<title>Chilbili, Uttar Pradesh – Local Community, Services &amp; Information</title>
-<meta name="description" content="Explore Chilbili, a vibrant locality in Uttar Pradesh, India. Discover local businesses, community services, agricultural resources, and everything you need to know about life in Chilbili.">
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<meta name="theme-color" content="#C2185B">
+<title>The Heaven Cakes | Custom Cakes &amp; Bakery – Perungudi, Chennai</title>
+<meta name="description" content="The Heaven Cakes – your favourite custom cake and bakery in Perungudi, Chennai. Birthday cakes, wedding cakes, anniversary cakes and more. Order now: 089254 49696.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:'Plus Jakarta Sans',sans-serif;color:#0f172a;background:#fff;-webkit-font-smoothing:antialiased}
-.wa-fab{position:fixed;bottom:24px;right:24px;z-index:9999;background:#25d366;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 24px rgba(37,211,102,.5);text-decoration:none;transition:transform .2s,box-shadow .2s}.wa-fab:hover{transform:scale(1.1);box-shadow:0 8px 32px rgba(37,211,102,.6)}
-[data-r]{opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease;}
-[data-r].r-in{opacity:1;transform:none;}
-[data-r][data-d="1"]{transition-delay:.1s;}[data-r][data-d="2"]{transition-delay:.22s;}
-[data-r][data-d="3"]{transition-delay:.34s;}[data-r][data-d="4"]{transition-delay:.46s;}
-[data-r][data-d="5"]{transition-delay:.58s;}[data-r][data-d="6"]{transition-delay:.70s;}
-.nav-s{box-shadow:0 2px 24px rgba(0,0,0,.12)!important;}
-nav{position:fixed;top:0;left:0;right:0;z-index:900;background:rgba(255,255,255,.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(0,0,0,.06);padding:0 5vw;display:flex;align-items:center;justify-content:space-between;height:62px;transition:box-shadow .3s}
-.nav-brand{font-weight:700;font-size:.97rem;color:#1B5E20;max-width:55%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.nav-cta{background:#1B5E20;color:#fff;padding:9px 22px;border-radius:8px;text-decoration:none;font-size:.82rem;font-weight:600;transition:opacity .2s}
-.nav-cta:hover{opacity:.88}
+body{font-family:'Inter',sans-serif;color:#2d1a1a;background:#fff;-webkit-font-smoothing:antialiased}
+
+/* WA FAB */
+.wa-fab{position:fixed;bottom:24px;right:24px;z-index:9999;background:#25d366;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 24px rgba(37,211,102,.5);text-decoration:none;transition:transform .2s}.wa-fab:hover{transform:scale(1.1)}
+
+/* SCROLL REVEAL */
+[data-r]{opacity:0;transform:translateY(26px);transition:opacity .65s ease,transform .65s ease}
+[data-r].r-in{opacity:1;transform:none}
+[data-r][data-d="1"]{transition-delay:.1s}[data-r][data-d="2"]{transition-delay:.22s}
+[data-r][data-d="3"]{transition-delay:.34s}[data-r][data-d="4"]{transition-delay:.46s}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:900;background:rgba(255,255,255,.97);backdrop-filter:blur(14px);border-bottom:1px solid rgba(194,24,91,.1);padding:0 5vw;display:flex;align-items:center;justify-content:space-between;height:62px;transition:box-shadow .3s}
+nav.nav-s{box-shadow:0 2px 20px rgba(0,0,0,.1)}
+.nav-brand{font-family:'Playfair Display',serif;font-weight:700;font-size:1.05rem;color:#C2185B;text-decoration:none;line-height:1.2}
+.nav-brand span{display:block;font-family:'Inter',sans-serif;font-size:.52rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:#bbb}
+.nav-right{display:flex;align-items:center;gap:10px}
+.nav-call{border:1.5px solid #C2185B;color:#C2185B;text-decoration:none;padding:7px 14px;border-radius:6px;font-size:.74rem;font-weight:600;transition:background .2s}
+.nav-call:hover{background:#C2185B;color:#fff}
+.nav-wa{background:#25d366;color:#fff;text-decoration:none;padding:8px 16px;border-radius:6px;font-size:.74rem;font-weight:600;display:flex;align-items:center;gap:6px;transition:opacity .2s}
+.nav-wa:hover{opacity:.88}
+@media(max-width:520px){.nav-call{display:none}}
+
 /* HERO */
-.hero{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden}
-.hero-bg{position:absolute;inset:-20%;width:140%;height:140%;background-image:url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1600&q=85&fit=crop&auto=format');background-size:cover;background-position:center;will-change:transform}
-.hero-overlay{position:absolute;inset:0;background:linear-gradient(150deg,#1B5E20f2 0%,#F9A825cc 60%,#1B5E2088 100%)}
-.hero-inner{position:relative;z-index:2;padding:100px 24px 60px;color:#fff;max-width:700px}
-.hero-chip{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.26);padding:7px 18px;border-radius:50px;font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:28px;backdrop-filter:blur(6px)}
-.hero h1{font-size:clamp(2rem,5.5vw,3.2rem);font-weight:800;line-height:1.12;margin-bottom:18px;letter-spacing:-.03em}
-.hero p{font-size:clamp(.94rem,2.2vw,1.1rem);opacity:.86;line-height:1.72;margin-bottom:36px;max-width:540px;margin-left:auto;margin-right:auto;font-weight:300}
-.hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-.btn-p{background:#fff;color:#1B5E20;padding:14px 36px;border-radius:10px;text-decoration:none;font-weight:700;font-size:.92rem;box-shadow:0 4px 16px rgba(0,0,0,.2);transition:transform .15s,box-shadow .15s}
-.btn-p:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,0,0,.25)}
-.btn-o{background:rgba(255,255,255,.12);border:1.5px solid rgba(255,255,255,.45);color:#fff;padding:13px 28px;border-radius:10px;text-decoration:none;font-weight:500;font-size:.92rem;transition:background .2s}
-.btn-o:hover{background:rgba(255,255,255,.2)}
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;overflow:hidden}
+.hero-bg{position:absolute;inset:-15%;width:130%;height:130%;background-image:url('images/cake-1.jpg');background-size:cover;background-position:center;will-change:transform}
+.hero-ov{position:absolute;inset:0;background:linear-gradient(135deg,rgba(194,24,91,.92) 0%,rgba(130,10,60,.82) 50%,rgba(90,5,40,.65) 100%)}
+.hero-in{position:relative;z-index:2;padding:90px 5vw 60px;max-width:660px}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);padding:7px 18px;border-radius:50px;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:#fff;margin-bottom:22px;backdrop-filter:blur(6px)}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.1rem,5.5vw,3.6rem);font-weight:900;color:#fff;line-height:1.1;margin-bottom:16px;letter-spacing:-.02em}
+.hero h1 em{color:#ffd6e8;font-style:italic}
+.hero-desc{font-size:clamp(.9rem,2vw,1.05rem);color:rgba(255,255,255,.82);line-height:1.75;margin-bottom:28px;font-weight:300;max-width:500px}
+.hero-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:30px}
+.htag{background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.28);color:#fff;padding:6px 14px;border-radius:20px;font-size:.72rem;font-weight:500}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn-white{background:#fff;color:#C2185B;padding:13px 30px;text-decoration:none;font-weight:700;font-size:.85rem;border-radius:8px;display:inline-flex;align-items:center;gap:8px;box-shadow:0 4px 16px rgba(0,0,0,.2);transition:transform .15s}
+.btn-white:hover{transform:translateY(-2px)}
+.btn-ghost{background:rgba(255,255,255,.12);border:1.5px solid rgba(255,255,255,.4);color:#fff;padding:12px 24px;text-decoration:none;font-size:.83rem;font-weight:500;border-radius:8px;display:inline-flex;align-items:center;gap:8px;transition:background .2s}
+.btn-ghost:hover{background:rgba(255,255,255,.22)}
+
 /* STATS */
 .stats-row{display:grid;grid-template-columns:repeat(3,1fr);background:#fff;box-shadow:0 8px 32px rgba(0,0,0,.1);position:relative;z-index:10}
-.stat{padding:24px 16px;text-align:center;border-right:1px solid #f1f5f9}
+.stat{padding:22px 12px;text-align:center;border-right:1px solid #fce4ec}
 .stat:last-child{border:none}
-.stat-n{font-size:1.75rem;font-weight:800;color:#1B5E20;line-height:1;letter-spacing:-.02em}
-.stat-l{font-size:.69rem;color:#94a3b8;text-transform:uppercase;letter-spacing:.09em;margin-top:5px;font-weight:500}
+.stat-n{font-family:'Playfair Display',serif;font-size:1.7rem;font-weight:700;color:#C2185B;line-height:1}
+.stat-l{font-size:.62rem;color:#bbb;text-transform:uppercase;letter-spacing:.1em;margin-top:5px;font-weight:500}
+
 /* SECTIONS */
 section{padding:72px 5vw}
-.container{max-width:980px;margin:0 auto}
-.sec-eyebrow{font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#E65100;margin-bottom:10px}
-.sec-h2{font-size:clamp(1.6rem,3vw,2.1rem);font-weight:800;color:#0f172a;margin-bottom:10px;letter-spacing:-.03em}
-.sec-center{text-align:center;margin-bottom:48px}
-.sec-sub{color:#64748b;font-size:.94rem;max-width:500px;margin:0 auto}
+.wrap{max-width:980px;margin:0 auto}
+.sec-eye{font-size:.68rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:#C2185B;margin-bottom:10px}
+.sec-h2{font-family:'Playfair Display',serif;font-size:clamp(1.7rem,3vw,2.3rem);font-weight:700;color:#2d1a1a;margin-bottom:10px;letter-spacing:-.01em}
+.sec-center{text-align:center;margin-bottom:46px}
+.sec-center .sec-eye{display:block}
+.sec-sub{color:#888;font-size:.9rem;max-width:480px;margin:0 auto;line-height:1.7;font-weight:300}
+
 /* ABOUT */
-.about-wrap{display:grid;grid-template-columns:1fr;gap:40px;align-items:center}
-@media(min-width:768px){.about-wrap{grid-template-columns:1fr 1fr}}
-.about-img-wrap{border-radius:20px;overflow:hidden;box-shadow:0 16px 48px rgba(0,0,0,.1)}
-.about-img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
-.about-text p{color:#475569;line-height:1.84;margin-bottom:13px;font-size:.93rem;font-weight:400}
+.about-grid{display:grid;grid-template-columns:1fr;gap:44px;align-items:center}
+@media(min-width:768px){.about-grid{grid-template-columns:1fr 1fr}}
+.about-img-w{border-radius:16px;overflow:hidden;box-shadow:0 16px 48px rgba(194,24,91,.15)}
+.about-img-w img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.about-text p{color:#555;line-height:1.86;margin-bottom:13px;font-size:.92rem;font-weight:300}
 .hl-list{list-style:none;margin-top:20px;display:flex;flex-direction:column;gap:8px}
-.hl-list li{padding:10px 14px 10px 36px;position:relative;background:#f8fafc;border-radius:8px;color:#334155;font-size:.87rem;border-left:3px solid #E65100}
-.hl-list li:before{content:'✓';color:#E65100;position:absolute;left:12px;font-weight:700}
-/* SERVICES */
-.svc-bg{background:#f8fafc}
-.svc-grid{display:grid;grid-template-columns:1fr;gap:18px}
-@media(min-width:480px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
-@media(min-width:900px){.svc-grid{grid-template-columns:repeat(3,1fr)}}
-.svc-card{background:#fff;border-radius:16px;padding:28px;border:1px solid #e2e8f0;transition:transform .22s,box-shadow .22s;overflow:hidden;position:relative}
-.svc-card:hover{transform:translateY(-5px);box-shadow:0 12px 32px rgba(0,0,0,.09)}
-.svc-card:before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#1B5E20,#E65100)}
-.svc-icon{width:46px;height:46px;background:#1B5E2014;border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;font-size:1.25rem}
-.svc-card h3{font-weight:700;color:#0f172a;margin-bottom:8px;font-size:.96rem}
-.svc-card p{color:#64748b;font-size:.86rem;line-height:1.65}
+.hl-list li{padding:10px 14px 10px 36px;position:relative;background:#fff5f8;border-radius:8px;color:#333;font-size:.87rem;border-left:3px solid #C2185B}
+.hl-list li:before{content:'✓';color:#C2185B;position:absolute;left:12px;font-weight:700}
+.about-cta{margin-top:24px;display:flex;gap:10px;flex-wrap:wrap}
+.btn-pink{background:#C2185B;color:#fff;padding:12px 26px;text-decoration:none;font-weight:700;font-size:.82rem;border-radius:8px;display:inline-flex;align-items:center;gap:8px;transition:opacity .2s}
+.btn-pink:hover{opacity:.88}
+.btn-outline-pink{border:1.5px solid #C2185B;color:#C2185B;padding:11px 22px;text-decoration:none;font-size:.82rem;font-weight:600;border-radius:8px;display:inline-flex;align-items:center;gap:6px;transition:background .2s}
+.btn-outline-pink:hover{background:#C2185B;color:#fff}
+
+/* MENU / PRODUCTS */
+.menu-bg{background:#fff5f8}
+.menu-grid{display:grid;grid-template-columns:1fr;gap:16px}
+@media(min-width:480px){.menu-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:860px){.menu-grid{grid-template-columns:repeat(3,1fr)}}
+.menu-card{background:#fff;border-radius:14px;padding:26px;border:1px solid #fce4ec;transition:transform .2s,box-shadow .2s;position:relative;overflow:hidden}
+.menu-card:hover{transform:translateY(-4px);box-shadow:0 10px 32px rgba(194,24,91,.12)}
+.menu-card:before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#C2185B,#f48fb1)}
+.menu-icon{width:48px;height:48px;background:#fff5f8;border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;font-size:1.5rem}
+.menu-card h3{font-weight:700;color:#2d1a1a;margin-bottom:8px;font-size:.94rem}
+.menu-card p{color:#777;font-size:.85rem;line-height:1.65;font-weight:300}
+
 /* PARALLAX STRIP */
-.ps-wrap{position:relative;min-height:340px;display:flex;align-items:center;overflow:hidden}
-#ps{position:absolute;inset:-20%;width:140%;height:140%;background-image:url('https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1600&q=85&fit=crop&auto=format');background-size:cover;background-position:center;will-change:transform}
-.ps-overlay{position:absolute;inset:0;background:#1B5E20e8}
-.ps-inner{position:relative;z-index:2;text-align:center;color:#fff;padding:56px 24px;width:100%}
-.ps-inner h2{font-size:clamp(1.5rem,3vw,2.1rem);font-weight:800;margin-bottom:12px;letter-spacing:-.02em}
-.ps-inner p{opacity:.82;max-width:480px;margin:0 auto 28px;font-size:.96rem;line-height:1.65}
+.ps-wrap{position:relative;min-height:320px;display:flex;align-items:center;overflow:hidden}
+#ps{position:absolute;inset:-20%;width:140%;height:140%;background-image:url('images/cake-1.jpg');background-size:cover;background-position:center;will-change:transform;filter:brightness(.22)}
+.ps-ov{position:absolute;inset:0;background:rgba(194,24,91,.6)}
+.ps-in{position:relative;z-index:2;text-align:center;color:#fff;padding:56px 24px;width:100%}
+.ps-in h2{font-family:'Playfair Display',serif;font-size:clamp(1.5rem,3vw,2.2rem);font-weight:700;margin-bottom:12px}
+.ps-in p{opacity:.82;max-width:480px;margin:0 auto 28px;font-size:.94rem;line-height:1.65;font-weight:300}
+
 /* GALLERY */
-.gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
 @media(min-width:600px){.gallery-grid{grid-template-columns:repeat(3,1fr)}}
 .gallery-grid img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;transition:transform .3s,opacity .3s}
-.gallery-grid img:hover{transform:scale(1.03);opacity:.9}
+.gallery-grid img:hover{transform:scale(1.04);opacity:.9}
+
 /* REVIEWS */
-.rv-bg{background:#0f172a}
-.rv-grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:40px}
+.rv-bg{background:#2d0a18}
+.rv-grid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:40px}
 @media(min-width:640px){.rv-grid{grid-template-columns:repeat(2,1fr)}}
 @media(min-width:960px){.rv-grid{grid-template-columns:repeat(3,1fr)}}
-.rv-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:24px;transition:background .2s}
-.rv-card:hover{background:rgba(255,255,255,.08)}
-.rv-stars{color:#fbbf24;font-size:1rem;margin-bottom:10px;letter-spacing:2px}
-.rv-text{color:rgba(255,255,255,.7);font-size:.89rem;line-height:1.76;font-style:italic;margin-bottom:14px}
-.rv-author{color:rgba(255,255,255,.36);font-size:.79rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em}
+.rv-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:24px;transition:background .2s}
+.rv-card:hover{background:rgba(255,255,255,.07)}
+.rv-stars{color:#ffd6e8;font-size:.95rem;margin-bottom:10px;letter-spacing:2px}
+.rv-text{color:rgba(255,255,255,.68);font-size:.88rem;line-height:1.76;font-style:italic;margin-bottom:14px;font-weight:300}
+.rv-author{color:rgba(255,255,255,.35);font-size:.77rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em}
+
 /* CONTACT */
-.contact-grid{display:grid;grid-template-columns:1fr;gap:24px}
+.contact-grid{display:grid;grid-template-columns:1fr;gap:20px}
 @media(min-width:768px){.contact-grid{grid-template-columns:1fr 1fr}}
-.contact-items{display:flex;flex-direction:column;gap:14px}
-.ci-row{display:flex;align-items:flex-start;gap:14px;padding:18px;background:#f8fafc;border-radius:12px;border:1px solid #e2e8f0}
-.ci-icon{width:42px;height:42px;background:#1B5E2014;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.1rem}
-.ci-row h4{font-size:.78rem;color:#94a3b8;font-weight:600;margin-bottom:4px;text-transform:uppercase;letter-spacing:.07em}
-.ci-row a,.ci-row p{color:#1B5E20;text-decoration:none;font-weight:600;font-size:.92rem}
-.cta-card{background:linear-gradient(135deg,#1B5E20 0%,#F9A825 100%);border-radius:16px;padding:36px;color:#fff;display:flex;flex-direction:column;gap:14px}
-.cta-card h3{font-size:1.35rem;font-weight:800;letter-spacing:-.02em}
-.cta-card p{opacity:.8;font-size:.9rem;line-height:1.62}
-.btn-cta-w{background:#fff;color:#1B5E20;padding:14px 28px;border-radius:10px;text-decoration:none;font-weight:700;font-size:.9rem;display:inline-block;transition:transform .15s}
+.contact-items{display:flex;flex-direction:column;gap:12px}
+.ci-row{display:flex;align-items:flex-start;gap:14px;padding:16px 18px;background:#fff5f8;border-radius:12px;border:1px solid #fce4ec;transition:border-color .2s}
+.ci-row:hover{border-color:#C2185B}
+.ci-icon{width:42px;height:42px;background:#fff;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.1rem;border:1px solid #fce4ec}
+.ci-row h4{font-size:.6rem;color:#ccc;font-weight:600;margin-bottom:4px;text-transform:uppercase;letter-spacing:.1em}
+.ci-row a,.ci-row p{color:#2d1a1a;text-decoration:none;font-weight:600;font-size:.9rem;line-height:1.5}
+.cta-card{background:linear-gradient(135deg,#C2185B 0%,#880e4f 100%);border-radius:16px;padding:36px;color:#fff;display:flex;flex-direction:column;gap:14px;justify-content:center}
+.cta-card h3{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;line-height:1.3}
+.cta-card p{opacity:.78;font-size:.88rem;line-height:1.65;font-weight:300}
+.btn-cta-w{background:#fff;color:#C2185B;padding:13px 26px;border-radius:8px;text-decoration:none;font-weight:700;font-size:.88rem;display:inline-flex;align-items:center;gap:8px;transition:transform .15s}
 .btn-cta-w:hover{transform:translateY(-2px)}
-.btn-cta-o{border:1.5px solid rgba(255,255,255,.4);color:#fff;padding:12px 26px;border-radius:10px;text-decoration:none;font-size:.9rem;display:inline-block;margin-top:8px}
+.btn-cta-green{background:#25d366;color:#fff;padding:13px 26px;border-radius:8px;text-decoration:none;font-weight:700;font-size:.88rem;display:inline-flex;align-items:center;gap:8px;transition:opacity .2s}
+.btn-cta-green:hover{opacity:.88}
+
 /* FOOTER */
-footer{background:#020617;color:#334155;padding:28px 5vw;text-align:center;font-size:.8rem}
-.footer-brand{color:#64748b;font-weight:700;font-size:.88rem;margin-bottom:6px}
+footer{background:#1a0510;color:#555;padding:28px 5vw;text-align:center;font-size:.78rem}
+.ft-brand{font-family:'Playfair Display',serif;color:#ffd6e8;font-size:.95rem;font-weight:700;margin-bottom:6px}
+footer a{color:#f48fb1;text-decoration:none}
 </style>
 </head>
 <body>
-<nav>
-  <span class="nav-brand">Chilbili</span>
-  <a href="https://wa.me/91?text=Namaste!%20I%20found%20Chilbili's%20website%20and%20would%20like%20to%20know%20more%20about%20local%20services%20and%20community%20information.%20Can%20you%20please%20help%20me%3F" class="nav-cta">💬 WhatsApp</a>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-brand">
+    The Heaven Cakes
+    <span>Custom Cakes &amp; Bakery · Perungudi, Chennai</span>
+  </div>
+  <div class="nav-right">
+    <a href="tel:08925449696" class="nav-call">📞 089254 49696</a>
+    <a href="https://wa.me/918925449696?text=Hi!%20I%20found%20The%20Heaven%20Cakes%20online%20and%20would%20like%20to%20order%20a%20custom%20cake.%20Can%20you%20help%20me%3F" class="nav-wa">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      WhatsApp
+    </a>
+  </div>
 </nav>
 
+<!-- HERO -->
 <div class="hero">
   <div class="hero-bg" id="hp"></div>
-  <div class="hero-overlay"></div>
-  <div class="hero-inner">
-    <div class="hero-chip">⭐ 5/5 &nbsp;·&nbsp; Google Verified</div>
-    <h1>Discover the Heart of Chilbili, Uttar Pradesh</h1>
-    <p>Your gateway to the vibrant community, local services, and rich culture of Chilbili.</p>
+  <div class="hero-ov"></div>
+  <div class="hero-in">
+    <div class="hero-badge">🎂 &nbsp; Custom Cakes · Perungudi, Chennai</div>
+    <h1>Every Celebration<br>Deserves a <em>Heavenly Cake</em></h1>
+    <p class="hero-desc">The Heaven Cakes brings you custom-made cakes for birthdays, weddings, anniversaries and every special moment — crafted fresh with love in the heart of Perungudi, Chennai.</p>
+    <div class="hero-tags">
+      <span class="htag">🎂 Birthday Cakes</span>
+      <span class="htag">💍 Wedding Cakes</span>
+      <span class="htag">🎁 Custom Orders</span>
+      <span class="htag">🍰 Fresh Daily</span>
+    </div>
     <div class="hero-btns">
-      <a href="https://wa.me/91?text=Namaste!%20I%20found%20Chilbili's%20website%20and%20would%20like%20to%20know%20more%20about%20local%20services%20and%20community%20information.%20Can%20you%20please%20help%20me%3F" class="btn-p">Explore Our Community</a>
-      
+      <a href="tel:08925449696" class="btn-white">📞 089254 49696</a>
+      <a href="https://wa.me/918925449696?text=Hi!%20I%20found%20The%20Heaven%20Cakes%20online%20and%20would%20like%20to%20order%20a%20custom%20cake.%20Can%20you%20help%20me%3F" class="btn-ghost">💬 Order on WhatsApp</a>
     </div>
   </div>
 </div>
 
+<!-- STATS -->
 <div class="stats-row" data-r>
-  <div class="stat"><div class="stat-n">5/5</div><div class="stat-l">Rating</div></div>
-  <div class="stat"><div class="stat-n">✓</div><div class="stat-l">Verified</div></div>
-  <div class="stat"><div class="stat-n">Local</div><div class="stat-l">Trusted</div></div>
+  <div class="stat"><div class="stat-n">5/5</div><div class="stat-l">Google Rating</div></div>
+  <div class="stat"><div class="stat-n">✓</div><div class="stat-l">Google Verified</div></div>
+  <div class="stat"><div class="stat-n">100%</div><div class="stat-l">Fresh & Custom</div></div>
 </div>
 
+<!-- ABOUT -->
 <section>
-  <div class="container">
-    <div class="about-wrap">
-      <div class="about-img-wrap" data-r>
-        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1600&q=85&fit=crop&auto=format" alt="Chilbili" class="about-img" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1600&q=85&fit=crop&auto=format'">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-img-w" data-r>
+        <img src="images/cake-1.jpg" alt="The Heaven Cakes – Perungudi Chennai" loading="lazy">
       </div>
       <div data-r data-d="2">
-        <p class="sec-eyebrow">About Us</p>
-        <h2 class="sec-h2">Chilbili</h2>
-        <p class="about-text">Chilbili is a thriving locality nestled in the heartland of Uttar Pradesh, India. Known for its warm community spirit and deep-rooted traditions, Chilbili serves as a hub for local residents seeking essential services, local commerce, and community connection. Whether you are a long-time resident or a newcomer, Chilbili welcomes you with open arms.</p><p class="about-text">Our community is built on trust, togetherness, and a shared vision for growth and prosperity. From local businesses to cultural gatherings, Chilbili represents the true essence of small-town India — where every face is familiar and every neighbor is family. Explore everything this wonderful locality has to offer and be a part of our ever-growing community.</p>
-        <ul class="hl-list"><li>A welcoming and tightly-knit community at the heart of Uttar Pradesh</li><li>Rich cultural heritage and traditional values passed through generations</li><li>Growing local economy with accessible services for every resident</li></ul>
+        <p class="sec-eye">About Us</p>
+        <h2 class="sec-h2">The Heaven Cakes —<br>Made with Love &amp; Care</h2>
+        <div class="about-text">
+          <p>The Heaven Cakes is your trusted neighbourhood cake shop in Perungudi, Chennai, serving the sweetest memories one slice at a time. We specialise in beautifully designed custom cakes for every occasion — from intimate birthdays to grand wedding celebrations.</p>
+          <p>Every cake we bake is made fresh, using quality ingredients and crafted with personal attention. Tell us your theme, your flavour, your vision — and we'll bring it to life, right here in Tirumalai Nagar, Perungudi.</p>
+        </div>
+        <ul class="hl-list">
+          <li>100% fresh, made-to-order custom cakes</li>
+          <li>Birthday, wedding, anniversary &amp; theme cakes</li>
+          <li>Wide range of flavours — chocolate, vanilla, fruit &amp; more</li>
+          <li>Photo cakes, fondant designs, tiered cakes</li>
+          <li>On-time delivery and pick-up from our shop</li>
+          <li>Trusted by Chennai families since our founding</li>
+        </ul>
+        <div class="about-cta">
+          <a href="tel:08925449696" class="btn-pink">📞 Call 089254 49696</a>
+          <a href="https://wa.me/918925449696?text=Hi!%20I%20found%20The%20Heaven%20Cakes%20online%20and%20would%20like%20to%20order%20a%20custom%20cake." class="btn-outline-pink">💬 WhatsApp</a>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="svc-bg">
-  <div class="container">
+<!-- MENU / CAKES -->
+<section class="menu-bg">
+  <div class="wrap">
     <div class="sec-center" data-r>
-      <p class="sec-eyebrow">What We Offer</p>
-      <h2 class="sec-h2">Our Services</h2>
-      <p class="sec-sub">Everything you need, all in one place</p>
+      <span class="sec-eye">What We Make</span>
+      <h2 class="sec-h2">Our Cake Collection</h2>
+      <p class="sec-sub">Custom baked to perfection — choose your flavour, design and size</p>
     </div>
-    <div class="svc-grid">
-      <div class="svc-card" data-r data-d="1"><div class="svc-icon">⭐</div><h3>Local Business Directory</h3><p>Find trusted local shops, vendors, and service providers right here in Chilbili.</p></div><div class="svc-card" data-r data-d="2"><div class="svc-icon">💡</div><h3>Community Announcements</h3><p>Stay updated with the latest news, events, and important notices from the Chilbili community.</p></div><div class="svc-card" data-r data-d="3"><div class="svc-icon">🏆</div><h3>Agricultural Support</h3><p>Access resources, guidance, and connections for farmers and agricultural workers in the region.</p></div><div class="svc-card" data-r data-d="1"><div class="svc-icon">✅</div><h3>Local Transport Information</h3><p>Get details on local transportation routes, auto-rickshaws, and connectivity to nearby towns.</p></div><div class="svc-card" data-r data-d="2"><div class="svc-icon">🎯</div><h3>Education &amp; Schools</h3><p>Information about nearby schools, coaching centers, and educational institutions serving Chilbili families.</p></div>
+    <div class="menu-grid">
+      <div class="menu-card" data-r data-d="1">
+        <div class="menu-icon">🎂</div>
+        <h3>Birthday Cakes</h3>
+        <p>Fun, colourful and personalised birthday cakes for kids and adults. Any theme, any size — we make it special.</p>
+      </div>
+      <div class="menu-card" data-r data-d="2">
+        <div class="menu-icon">💍</div>
+        <h3>Wedding Cakes</h3>
+        <p>Elegant multi-tier wedding cakes with intricate fondant work and fresh floral designs to make your big day unforgettable.</p>
+      </div>
+      <div class="menu-card" data-r data-d="3">
+        <div class="menu-icon">🍫</div>
+        <h3>Chocolate Cakes</h3>
+        <p>Rich, indulgent chocolate cakes — dark, milk, or white — with ganache drips, truffles and decadent finishes.</p>
+      </div>
+      <div class="menu-card" data-r data-d="1">
+        <div class="menu-icon">📸</div>
+        <h3>Photo Cakes</h3>
+        <p>Send us a photo and we'll print it on a fresh cream cake. Perfect for birthdays, farewells and surprises.</p>
+      </div>
+      <div class="menu-card" data-r data-d="2">
+        <div class="menu-icon">💐</div>
+        <h3>Anniversary Cakes</h3>
+        <p>Romantic anniversary cakes with flowers, hearts and personalised messages to celebrate your love story.</p>
+      </div>
+      <div class="menu-card" data-r data-d="3">
+        <div class="menu-icon">🍰</div>
+        <h3>Pastries &amp; Cupcakes</h3>
+        <p>Fresh daily pastries, cupcakes and mini cakes in assorted flavours — perfect for parties and small gatherings.</p>
+      </div>
     </div>
   </div>
 </section>
 
+<!-- PARALLAX STRIP -->
 <div class="ps-wrap" data-r>
   <div id="ps"></div>
-  <div class="ps-overlay"></div>
-  <div class="ps-inner">
-    <h2>Ready to Get Started?</h2>
-    <p>Chilbili, Uttar Pradesh, India</p>
-    <a href="https://wa.me/91?text=Namaste!%20I%20found%20Chilbili's%20website%20and%20would%20like%20to%20know%20more%20about%20local%20services%20and%20community%20information.%20Can%20you%20please%20help%20me%3F" style="background:#E65100;color:#fff;padding:14px 36px;border-radius:10px;text-decoration:none;font-weight:700;display:inline-block;box-shadow:0 4px 16px rgba(0,0,0,.2)">💬 WhatsApp Us Now</a>
+  <div class="ps-ov"></div>
+  <div class="ps-in">
+    <h2>Order Your Dream Cake Today</h2>
+    <p>Call or WhatsApp us with your design, date and flavour — we'll take care of the rest. Walk-ins welcome too!</p>
+    <a href="https://wa.me/918925449696?text=Hi!%20I%20found%20The%20Heaven%20Cakes%20online%20and%20would%20like%20to%20order%20a%20custom%20cake.%20Can%20you%20help%20me%3F" style="background:#ffd6e8;color:#C2185B;padding:13px 34px;border-radius:8px;text-decoration:none;font-weight:700;font-size:.88rem;display:inline-flex;align-items:center;gap:8px;box-shadow:0 4px 16px rgba(0,0,0,.2)">💬 WhatsApp to Order</a>
   </div>
 </div>
 
-
-
-<section class="rv-bg">
-  <div class="container">
+<!-- GALLERY -->
+<section>
+  <div class="wrap">
     <div class="sec-center" data-r>
-      <p class="sec-eyebrow" style="color:rgba(255,255,255,.45)">Testimonials</p>
-      <h2 class="sec-h2" style="color:#fff">What Clients Say</h2>
-      <p class="sec-sub" style="color:rgba(255,255,255,.42)">Real feedback from real people</p>
+      <span class="sec-eye">Our Work</span>
+      <h2 class="sec-h2">Fresh From Our Bakery</h2>
+      <p class="sec-sub">A glimpse of the cakes we craft every day at The Heaven Cakes</p>
     </div>
-    <div class="rv-grid">
-      <div class="rv-card" data-r data-d="NaN"><div class="rv-stars">★★★★★</div><p class="rv-text">"Chilbili is a wonderful place to live and grow. The community here is incredibly supportive and the local markets have everything we need."</p><div class="rv-author">— Ramesh Verma, Local Resident</div></div><div class="rv-card" data-r data-d="NaN"><div class="rv-stars">★★★★★</div><p class="rv-text">"I have been living in Chilbili for over 20 years and it still feels like home every single day. The people here are the real treasure."</p><div class="rv-author">— Sunita Devi, Homemaker</div></div><div class="rv-card" data-r data-d="NaN"><div class="rv-stars">★★★★★</div><p class="rv-text">"A peaceful and well-connected locality. Very proud to be a part of this community in Uttar Pradesh."</p><div class="rv-author">— Ajay Kumar, Small Business Owner</div></div>
+    <div class="gallery-grid">
+      <img src="images/cake-1.jpg" alt="The Heaven Cakes" loading="lazy">
+      <img src="images/cake-1.jpg" alt="Custom cake" loading="lazy" style="object-position:top">
+      <img src="images/cake-1.jpg" alt="Bakery cakes" loading="lazy" style="object-position:bottom">
     </div>
   </div>
 </section>
 
-<section>
-  <div class="container">
+<!-- REVIEWS -->
+<section class="rv-bg">
+  <div class="wrap">
     <div class="sec-center" data-r>
-      <p class="sec-eyebrow">Contact</p>
-      <h2 class="sec-h2">Get In Touch</h2>
-      <p class="sec-sub">We'd love to hear from you</p>
+      <span class="sec-eye" style="color:rgba(255,214,232,.6)">Reviews</span>
+      <h2 class="sec-h2" style="color:#fff;font-family:'Playfair Display',serif">What Our Customers Say</h2>
+      <p class="sec-sub" style="color:rgba(255,255,255,.4)">Real words from happy customers at The Heaven Cakes</p>
+    </div>
+    <div class="rv-grid">
+      <div class="rv-card" data-r data-d="1"><div class="rv-stars">★★★★★</div><p class="rv-text">"Ordered a birthday cake and it was absolutely stunning! The design was exactly what I wanted and it tasted even better. Will always come here for cakes!"</p><div class="rv-author">— Priya S, Perungudi</div></div>
+      <div class="rv-card" data-r data-d="2"><div class="rv-stars">★★★★★</div><p class="rv-text">"The wedding cake they made for us was beyond beautiful. Three tiers, floral design and it was delicious. Everyone at the wedding was asking where we ordered it from!"</p><div class="rv-author">— Kavitha &amp; Rajan, Chennai</div></div>
+      <div class="rv-card" data-r data-d="3"><div class="rv-stars">★★★★★</div><p class="rv-text">"Ordered a photo cake for my mother's 60th birthday. They captured the photo perfectly on the cake and it was so fresh and moist. Loved it!"</p><div class="rv-author">— Arun M, OMR</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section>
+  <div class="wrap">
+    <div class="sec-center" data-r>
+      <span class="sec-eye">Find Us</span>
+      <h2 class="sec-h2">Visit The Heaven Cakes</h2>
+      <p class="sec-sub">Come to our shop or call ahead to place your custom cake order</p>
     </div>
     <div class="contact-grid">
       <div class="contact-items" data-r>
-        
-        <div class="ci-row"><div class="ci-icon">📍</div><div><h4>Address</h4><p>Chilbili, Uttar Pradesh, India</p></div></div>
-        
-        <div class="ci-row"><div class="ci-icon">🗺️</div><div><h4>Directions</h4><a href="https://maps.google.com/?cid=6270018039310801916">View on Google Maps</a></div></div>
+        <div class="ci-row"><div class="ci-icon">📞</div><div><h4>Phone</h4><a href="tel:08925449696">089254 49696</a></div></div>
+        <div class="ci-row"><div class="ci-icon">💬</div><div><h4>WhatsApp</h4><a href="https://wa.me/918925449696">+91 89254 49696</a></div></div>
+        <div class="ci-row"><div class="ci-icon">📍</div><div><h4>Address</h4><p>No 42, 1, Church Main Rd,<br>Tirumalai Nagar, Perungudi,<br>Kanchipuram, Chennai,<br>Tamil Nadu — 600096</p></div></div>
+        <div class="ci-row"><div class="ci-icon">🗺️</div><div><h4>Directions</h4><a href="https://maps.google.com/?q=The+Heaven+Cakes,+No+42,+Church+Main+Rd,+Tirumalai+Nagar,+Perungudi,+Chennai+600096" target="_blank">View on Google Maps</a></div></div>
       </div>
       <div class="cta-card" data-r data-d="2">
-        <h3>Let's Talk</h3>
-        <p>Have questions? We respond within minutes on WhatsApp. Feel free to reach out.</p>
-        <a href="https://wa.me/91?text=Namaste!%20I%20found%20Chilbili's%20website%20and%20would%20like%20to%20know%20more%20about%20local%20services%20and%20community%20information.%20Can%20you%20please%20help%20me%3F" class="btn-cta-w">💬 WhatsApp Now</a>
-        
+        <h3>Order Your Cake Now</h3>
+        <p>WhatsApp or call us with your cake details — flavour, design, size and date. We'll confirm your order and get baking!</p>
+        <a href="https://wa.me/918925449696?text=Hi!%20I%20found%20The%20Heaven%20Cakes%20online%20and%20would%20like%20to%20order%20a%20custom%20cake.%20Can%20you%20help%20me%3F" class="btn-cta-green">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp to Order
+        </a>
+        <a href="tel:08925449696" class="btn-cta-w">📞 Call 089254 49696</a>
       </div>
     </div>
   </div>
 </section>
 
 <footer>
-  <div class="footer-brand">Chilbili</div>
-  <div>© 2026 · Chilbili, Uttar Pradesh, India</div>
+  <div class="ft-brand">The Heaven Cakes</div>
+  <div>No 42, 1, Church Main Rd, Tirumalai Nagar, Perungudi, Chennai — 600096</div>
+  <div style="margin-top:6px"><a href="tel:08925449696">089254 49696</a> &nbsp;·&nbsp; <a href="https://wa.me/918925449696">WhatsApp</a></div>
+  <div style="margin-top:8px;color:#333">© 2026 The Heaven Cakes</div>
 </footer>
-<a href="https://wa.me/91?text=Namaste!%20I%20found%20Chilbili's%20website%20and%20would%20like%20to%20know%20more%20about%20local%20services%20and%20community%20information.%20Can%20you%20please%20help%20me%3F" class="wa-fab" aria-label="WhatsApp">
+
+<a href="https://wa.me/918925449696?text=Hi!%20I%20found%20The%20Heaven%20Cakes%20online%20and%20would%20like%20to%20order%20a%20custom%20cake.%20Can%20you%20help%20me%3F" class="wa-fab" aria-label="WhatsApp">
   <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
 </a>
 
 <script>
-// Scroll-reveal
 (function(){
   var els=document.querySelectorAll('[data-r]');
   if(!els.length)return;
   var obs=new IntersectionObserver(function(entries){
     entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('r-in');obs.unobserve(e.target);}});
-  },{threshold:0.1,rootMargin:'0px 0px -48px 0px'});
+  },{threshold:0.08,rootMargin:'0px 0px -40px 0px'});
   els.forEach(function(el){obs.observe(el);});
 })();
-// Nav shadow
 (function(){
-  var nav=document.querySelector('nav');
+  var nav=document.getElementById('nav');
   if(!nav)return;
   window.addEventListener('scroll',function(){nav.classList.toggle('nav-s',window.scrollY>50);},{passive:true});
 })();
-// Parallax
 if(window.innerWidth>768){
   var hp=document.getElementById('hp'),ps=document.getElementById('ps');
   window.addEventListener('scroll',function(){
     var y=window.scrollY;
-    if(hp)hp.style.transform='translateY('+y*.3+'px)';
-    if(ps){var r=ps.closest('.ps-wrap').getBoundingClientRect();ps.style.transform='translateY('+r.top*.2+'px)';}
+    if(hp)hp.style.transform='translateY('+y*.28+'px)';
+    if(ps){var r=ps.closest('.ps-wrap').getBoundingClientRect();ps.style.transform='translateY('+r.top*.18+'px)';}
   },{passive:true});
 }
 </script>
-</body></html>
+</body>
+</html>
